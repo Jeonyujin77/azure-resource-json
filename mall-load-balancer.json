@@ -1,0 +1,145 @@
+{
+    "name": "mall-load-balancer",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer",
+    "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+    "type": "Microsoft.Network/loadBalancers",
+    "location": "koreacentral",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "148df694-2974-47a3-b3fd-68ad9fdd961c",
+        "frontendIPConfigurations": [
+            {
+                "name": "frontend",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/frontendIPConfigurations/frontend",
+                "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+                "type": "Microsoft.Network/loadBalancers/frontendIPConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/publicIPAddresses/mall-public-ip-load-balancer"
+                    },
+                    "loadBalancingRules": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/loadBalancingRules/http-rule"
+                        }
+                    ]
+                }
+            }
+        ],
+        "backendAddressPools": [
+            {
+                "name": "backend-pool",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/backendAddressPools/backend-pool",
+                "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "loadBalancerBackendAddresses": [
+                        {
+                            "name": "mall-rg_mall-webserver-01738_z1ipconfig1",
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/backendAddressPools/backend-pool/loadBalancerBackendAddresses/mall-rg_mall-webserver-01738_z1ipconfig1",
+                            "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+                            "properties": {
+                                "provisioningState": "Succeeded",
+                                "networkInterfaceIPConfiguration": {
+                                    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-01738_z1/ipConfigurations/ipconfig1"
+                                }
+                            },
+                            "type": "Microsoft.Network/loadBalancers/backendAddressPools/loadBalancerBackendAddresses"
+                        },
+                        {
+                            "name": "mall-rg_mall-webserver-02245_z1ipconfig1",
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/backendAddressPools/backend-pool/loadBalancerBackendAddresses/mall-rg_mall-webserver-02245_z1ipconfig1",
+                            "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+                            "properties": {
+                                "provisioningState": "Succeeded",
+                                "networkInterfaceIPConfiguration": {
+                                    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-02245_z1/ipConfigurations/ipconfig1"
+                                }
+                            },
+                            "type": "Microsoft.Network/loadBalancers/backendAddressPools/loadBalancerBackendAddresses"
+                        }
+                    ],
+                    "backendIPConfigurations": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-01738_z1/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-02245_z1/ipConfigurations/ipconfig1"
+                        }
+                    ],
+                    "loadBalancingRules": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/loadBalancingRules/http-rule"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/loadBalancers/backendAddressPools"
+            }
+        ],
+        "loadBalancingRules": [
+            {
+                "name": "http-rule",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/loadBalancingRules/http-rule",
+                "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+                "type": "Microsoft.Network/loadBalancers/loadBalancingRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "frontendIPConfiguration": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/frontendIPConfigurations/frontend"
+                    },
+                    "frontendPort": 80,
+                    "backendPort": 80,
+                    "enableFloatingIP": false,
+                    "idleTimeoutInMinutes": 15,
+                    "protocol": "Tcp",
+                    "enableDestinationServiceEndpoint": false,
+                    "enableTcpReset": true,
+                    "allowBackendPortConflict": false,
+                    "loadDistribution": "Default",
+                    "disableOutboundSnat": true,
+                    "backendAddressPool": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/backendAddressPools/backend-pool"
+                    },
+                    "backendAddressPools": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/backendAddressPools/backend-pool"
+                        }
+                    ],
+                    "probe": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/probes/health-probe"
+                    }
+                }
+            }
+        ],
+        "probes": [
+            {
+                "name": "health-probe",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/probes/health-probe",
+                "etag": "W/\"c00dda65-cb57-4d01-9913-4106555bac68\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "protocol": "Tcp",
+                    "port": 80,
+                    "intervalInSeconds": 5,
+                    "numberOfProbes": 1,
+                    "probeThreshold": 1,
+                    "loadBalancingRules": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/loadBalancingRules/http-rule"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/loadBalancers/probes"
+            }
+        ],
+        "inboundNatRules": [],
+        "outboundRules": [],
+        "inboundNatPools": []
+    },
+    "sku": {
+        "name": "Standard",
+        "tier": "Regional"
+    }
+}

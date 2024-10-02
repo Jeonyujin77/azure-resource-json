@@ -1,0 +1,32 @@
+{
+    "name": "mall-public-ip-load-balancer",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/publicIPAddresses/mall-public-ip-load-balancer",
+    "etag": "W/\"366a1202-19eb-4631-aee6-67206dff7c5e\"",
+    "location": "koreacentral",
+    "tags": {},
+    "zones": [
+        "2",
+        "3",
+        "1"
+    ],
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "e714a121-f19b-41c6-a0fc-f0e9ce5c46e1",
+        "ipAddress": "20.249.187.47",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/loadBalancers/mall-load-balancer/frontendIPConfigurations/frontend"
+        },
+        "ddosSettings": {
+            "protectionMode": "VirtualNetworkInherited"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard",
+        "tier": "Regional"
+    }
+}

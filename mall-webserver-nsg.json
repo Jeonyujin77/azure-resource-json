@@ -1,0 +1,208 @@
+{
+    "name": "mall-webserver-01-nsg",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg",
+    "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "location": "koreacentral",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "92bcf7cf-0c58-4125-bbd9-2b077fbb5314",
+        "securityRules": [
+            {
+                "name": "AllowAnyHTTPInbound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/securityRules/AllowAnyHTTPInbound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "protocol": "TCP",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "80",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 1010,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowAnyCustom8080Inbound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/securityRules/AllowAnyCustom8080Inbound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "8080",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 1020,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            }
+        ],
+        "defaultSecurityRules": [
+            {
+                "name": "AllowVnetInBound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/defaultSecurityRules/AllowVnetInBound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow inbound traffic from all VMs in VNET",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "VirtualNetwork",
+                    "destinationAddressPrefix": "VirtualNetwork",
+                    "access": "Allow",
+                    "priority": 65000,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowAzureLoadBalancerInBound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow inbound traffic from azure load balancer",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "AzureLoadBalancer",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 65001,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "DenyAllInBound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/defaultSecurityRules/DenyAllInBound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Deny all inbound traffic",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Deny",
+                    "priority": 65500,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowVnetOutBound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/defaultSecurityRules/AllowVnetOutBound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "VirtualNetwork",
+                    "destinationAddressPrefix": "VirtualNetwork",
+                    "access": "Allow",
+                    "priority": 65000,
+                    "direction": "Outbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowInternetOutBound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/defaultSecurityRules/AllowInternetOutBound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow outbound traffic from all VMs to Internet",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "Internet",
+                    "access": "Allow",
+                    "priority": 65001,
+                    "direction": "Outbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "DenyAllOutBound",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg/defaultSecurityRules/DenyAllOutBound",
+                "etag": "W/\"c024150c-c3c2-44cb-960d-ffe17d235759\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Deny all outbound traffic",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Deny",
+                    "priority": 65500,
+                    "direction": "Outbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            }
+        ],
+        "networkInterfaces": [
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-vm-02388_z2"
+            },
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-01738_z1"
+            },
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-02245_z1"
+            },
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-vm-01196_z1"
+            }
+        ],
+        "subnets": [
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/PrivateSubnet"
+            }
+        ]
+    }
+}

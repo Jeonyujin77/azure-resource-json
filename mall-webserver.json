@@ -1,0 +1,86 @@
+{
+    "name": "mall-webserver-01",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Compute/virtualMachines/mall-webserver-01",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "koreacentral",
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_B1s"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "f89d881f-e5e5-4eb6-a821-9ce03e091971",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "ubuntu-24_04-lts",
+                "sku": "server",
+                "version": "latest",
+                "exactVersion": "24.04.202409120"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "mall-webserver-01_OsDisk_1_49e67d1905fd415abb3c1ce187ca88da",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Compute/disks/mall-webserver-01_OsDisk_1_49e67d1905fd415abb3c1ce187ca88da"
+                },
+                "deleteOption": "Delete",
+                "diskSizeGB": 30
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "mall-webserver-01",
+            "adminUsername": "azureuser",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azureuser/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCTysehPQr/oY6oPo83xQlXGx3u5ciz6nhQpV12dk3B4iwdiz7Bg1ymNzOgGEJL/SSSDAKu90Ne9wgWwEg5FiIE11EtbmAS46MWAXac4Z4VBPUOqRCzyU0v1K1Yc0vhDhakHOWipU86QfRxYmFrYYoTuKT9Ho/pgk0wVMeJ3hOuqePW8inRTqoZisEEwDcLd+iJO3lZRneU5EHxPbWXHiuiL92uWVYw9Dc4MJJ0IAoauOVvyy/LZalODXBF+S+edp9xP9KGFmw7zn2/do3UUEMNxUpYNtI8KmaJjd10Qb8gy0XL2cze0VKActpzkO6LBGFMLHO3VSu5nThY61OyfRGMp/IOhHg37UvgoROKu1OQnLVoy45gFScQGVz/RIFey2Tdc/PXlj0fRht1XR6cxlUZzRD0YeV8y5dFP/wkXxjdThWCC+OME8XAQ1w17cROcehBMOkhd/Ck7Gy7ud91A7QnEv6YBH+U/9lLkScPn3jyRAlt9NoZIoiQs1GI/9hutk= generated-by-azure"
+                        }
+                    ]
+                },
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-webserver-01738_z1",
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        }
+    },
+    "zones": [
+        "1"
+    ]
+}

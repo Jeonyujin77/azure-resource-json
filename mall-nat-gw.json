@@ -1,0 +1,29 @@
+{
+    "name": "mall-nat-gw",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/natGateways/mall-nat-gw",
+    "etag": "W/\"8d0b5e99-98a7-484b-a198-20cc54e4c1df\"",
+    "type": "Microsoft.Network/natGateways",
+    "location": "koreacentral",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "1bbd7cfe-9be2-4ffa-8fa7-baaabc279c25",
+        "idleTimeoutInMinutes": 4,
+        "publicIpAddresses": [
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/publicIPAddresses/mall-ip-nat"
+            }
+        ],
+        "subnets": [
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/PublicSubnet"
+            },
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/PrivateSubnet"
+            }
+        ]
+    },
+    "sku": {
+        "name": "Standard"
+    }
+}

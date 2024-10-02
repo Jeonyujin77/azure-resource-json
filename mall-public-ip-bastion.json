@@ -1,0 +1,26 @@
+{
+    "name": "mall-public-ip-bastion",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/publicIPAddresses/mall-public-ip-bastion",
+    "etag": "W/\"a889bd08-2126-4220-9464-e8b338fbe242\"",
+    "location": "koreacentral",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "dc7c09ba-0abe-434e-bf8b-c3d63d4ccd63",
+        "ipAddress": "52.141.42.102",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/bastionHosts/mall-Bastion/bastionHostIpConfigurations/IpConf"
+        },
+        "ddosSettings": {
+            "protectionMode": "VirtualNetworkInherited"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard",
+        "tier": "Regional"
+    }
+}

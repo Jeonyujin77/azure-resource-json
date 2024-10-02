@@ -1,0 +1,53 @@
+{
+    "name": "mall-vm-01196_z1",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-vm-01196_z1",
+    "etag": "W/\"3fa5e0fa-2198-4d1d-85ba-0171e664a849\"",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "8745ac5f-6762-44b9-8969-362df3405f16",
+        "ipConfigurations": [
+            {
+                "name": "ipconfig1",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkInterfaces/mall-vm-01196_z1/ipConfigurations/ipconfig1",
+                "etag": "W/\"3fa5e0fa-2198-4d1d-85ba-0171e664a849\"",
+                "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.2.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "subnet": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/PrivateSubnet"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                }
+            }
+        ],
+        "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "v0sdcn5lo1huzc1utfgmj5sxjc.syx.internal.cloudapp.net"
+        },
+        "macAddress": "60-45-BD-45-14-40",
+        "enableAcceleratedNetworking": false,
+        "vnetEncryptionSupported": false,
+        "enableIPForwarding": false,
+        "disableTcpStateTracking": false,
+        "networkSecurityGroup": {
+            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg"
+        },
+        "primary": true,
+        "virtualMachine": {
+            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Compute/virtualMachines/mall-vm-01"
+        },
+        "hostedWorkloads": [],
+        "tapConfigurations": [],
+        "nicType": "Standard",
+        "allowPort25Out": false,
+        "auxiliaryMode": "None",
+        "auxiliarySku": "None"
+    },
+    "type": "Microsoft.Network/networkInterfaces",
+    "location": "koreacentral",
+    "kind": "Regular"
+}

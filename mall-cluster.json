@@ -1,0 +1,90 @@
+{
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/mall-cluster",
+    "name": "mall-cluster",
+    "type": "Microsoft.DBforPostgreSQL/serverGroupsv2",
+    "tags": {},
+    "location": "koreacentral",
+    "systemData": {
+        "createdAt": "2024-10-01T03:41:04.4460735Z",
+        "createdBy": "wjsdbwls7777@gmail.com",
+        "createdByType": "User",
+        "lastModifiedAt": "2024-10-02T05:51:51.5295102Z",
+        "lastModifiedBy": "wjsdbwls7777@gmail.com",
+        "lastModifiedByType": "User"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "state": "Ready",
+        "administratorLogin": "citus",
+        "postgresqlVersion": "16",
+        "citusVersion": "12.1",
+        "maintenanceWindow": {
+            "customWindow": "Disabled",
+            "dayOfWeek": 0,
+            "startHour": 0,
+            "startMinute": 0
+        },
+        "preferredPrimaryZone": "3",
+        "enableShardsOnCoordinator": true,
+        "earliestRestoreTime": "2024-10-02T06:13:40Z",
+        "dataEncryption": {
+            "type": "SystemManaged"
+        },
+        "sourceResourceId": null,
+        "enableHa": false,
+        "coordinatorServerEdition": "GeneralPurpose",
+        "nodeServerEdition": "MemoryOptimized",
+        "coordinatorStorageQuotaInMb": 524288,
+        "nodeStorageQuotaInMb": 524288,
+        "coordinatorVCores": 4,
+        "nodeVCores": 4,
+        "coordinatorEnablePublicIpAccess": true,
+        "nodeEnablePublicIpAccess": true,
+        "nodeCount": 2,
+        "serverNames": [
+            {
+                "name": "mall-cluster-c",
+                "fullyQualifiedDomainName": "c-mall-cluster.r6hxszezeeomkw.postgres.cosmos.azure.com"
+            },
+            {
+                "name": "mall-cluster-w0",
+                "fullyQualifiedDomainName": "w0-mall-cluster.r6hxszezeeomkw.postgres.cosmos.azure.com"
+            },
+            {
+                "name": "mall-cluster-w1",
+                "fullyQualifiedDomainName": "w1-mall-cluster.r6hxszezeeomkw.postgres.cosmos.azure.com"
+            }
+        ],
+        "readReplicas": [],
+        "privateEndpointConnections": [
+            {
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/mall-cluster/privateEndpointConnections/mall-cluster-c-pe1.139ce93b-9e7e-485a-80c7-14db79f988e6",
+                "systemData": {
+                    "createdAt": "2024-10-01T03:48:05.6792825Z",
+                    "createdBy": "2cf9eb86-36b5-49dc-86ae-9a63135dfa8c",
+                    "createdByType": "Application",
+                    "lastModifiedAt": "2024-10-01T03:48:05.6792825Z",
+                    "lastModifiedBy": "2cf9eb86-36b5-49dc-86ae-9a63135dfa8c",
+                    "lastModifiedByType": "Application"
+                },
+                "properties": {
+                    "privateEndpoint": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/privateEndpoints/mall-cluster-c-pe1"
+                    },
+                    "groupIds": [
+                        "coordinator"
+                    ],
+                    "privateLinkServiceConnectionState": {
+                        "status": "Approved",
+                        "description": "Auto-approved",
+                        "actionsRequired": "None"
+                    }
+                }
+            }
+        ],
+        "databaseName": "mall-db",
+        "aad_auth_enabled": "disabled",
+        "password_enabled": "enabled",
+        "enableGeoBackup": false
+    }
+}

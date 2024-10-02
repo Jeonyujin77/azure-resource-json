@@ -1,0 +1,132 @@
+{
+    "name": "mall-vnet",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet",
+    "etag": "W/\"d8520e76-8424-42cc-ae9c-a852e961efa1\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "koreacentral",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3731a4ae-76eb-4ccf-8b74-994cc4fe574a",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ],
+            "ipamPoolPrefixAllocations": []
+        },
+        "encryption": {
+            "enabled": false,
+            "enforcement": "AllowUnencrypted"
+        },
+        "subnets": [
+            {
+                "name": "PublicSubnet",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/PublicSubnet",
+                "etag": "W/\"d8520e76-8424-42cc-ae9c-a852e961efa1\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefixes": [
+                        "10.0.0.0/24"
+                    ],
+                    "ipamPoolPrefixAllocations": [],
+                    "natGateway": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/natGateways/mall-nat-gw"
+                    },
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/networkInterfaces/MALL-WEBSERVER-01738_Z1/ipConfigurations/IPCONFIG1"
+                        },
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/networkInterfaces/MALL-WEBSERVER-02245_Z1/ipConfigurations/IPCONFIG1"
+                        }
+                    ],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "AzureBastionSubnet",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/AzureBastionSubnet",
+                "etag": "W/\"d8520e76-8424-42cc-ae9c-a852e961efa1\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefixes": [
+                        "10.0.1.0/26"
+                    ],
+                    "ipamPoolPrefixAllocations": [],
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/bastionHosts/MALL-BASTION/bastionHostIpConfigurations/IPCONF"
+                        }
+                    ],
+                    "serviceEndpoints": [
+                        {
+                            "provisioningState": "Succeeded",
+                            "service": "Microsoft.AzureCosmosDB",
+                            "locations": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "PrivateSubnet",
+                "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/virtualNetworks/mall-vnet/subnets/PrivateSubnet",
+                "etag": "W/\"d8520e76-8424-42cc-ae9c-a852e961efa1\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefixes": [
+                        "10.0.2.0/24"
+                    ],
+                    "ipamPoolPrefixAllocations": [],
+                    "networkSecurityGroup": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/networkSecurityGroups/mall-webserver-01-nsg"
+                    },
+                    "natGateway": {
+                        "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/natGateways/mall-nat-gw"
+                    },
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/networkInterfaces/MALL-CLUSTER-C-PE1.NIC.34A9E29E-5005-4120-B28F-5E9E231F7BAE/ipConfigurations/PRIVATEENDPOINTIPCONFIG.57D0ACDB-4A03-40FA-8C5E-D4C015AF42E2"
+                        },
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/networkInterfaces/MALL-VM-01196_Z1/ipConfigurations/IPCONFIG1"
+                        },
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/networkInterfaces/MALL-VM-02388_Z2/ipConfigurations/IPCONFIG1"
+                        }
+                    ],
+                    "privateEndpoints": [
+                        {
+                            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Network/privateEndpoints/MALL-CLUSTER-C-PE1"
+                        }
+                    ],
+                    "serviceEndpoints": [
+                        {
+                            "provisioningState": "Succeeded",
+                            "service": "Microsoft.AzureCosmosDB",
+                            "locations": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "delegations": [],
+                    "purpose": "PrivateEndpoints",
+                    "privateEndpointNetworkPolicies": "NetworkSecurityGroupEnabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled",
+                    "defaultOutboundAccess": false
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ],
+        "virtualNetworkPeerings": [],
+        "enableDdosProtection": false
+    }
+}

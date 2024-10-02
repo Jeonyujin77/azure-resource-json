@@ -1,0 +1,17 @@
+{
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/privateDnsZones/privatelink.postgres.cosmos.azure.com",
+    "name": "privatelink.postgres.cosmos.azure.com",
+    "type": "Microsoft.Network/privateDnsZones",
+    "etag": "d1316332-d96f-447a-b9fc-fd80fb827ecd",
+    "location": "global",
+    "tags": {},
+    "properties": {
+        "maxNumberOfRecordSets": 25000,
+        "maxNumberOfVirtualNetworkLinks": 1000,
+        "maxNumberOfVirtualNetworkLinksWithRegistration": 100,
+        "numberOfRecordSets": 2,
+        "numberOfVirtualNetworkLinks": 1,
+        "numberOfVirtualNetworkLinksWithRegistration": 0,
+        "provisioningState": "Succeeded"
+    }
+}

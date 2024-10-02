@@ -1,0 +1,47 @@
+{
+    "name": "mall-vm-01_disk1_5de91e74d5b64c708dd9be2eda13d9aa",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/MALL-RG/providers/Microsoft.Compute/disks/mall-vm-01_disk1_5de91e74d5b64c708dd9be2eda13d9aa",
+    "type": "Microsoft.Compute/disks",
+    "location": "koreacentral",
+    "zones": [
+        "1"
+    ],
+    "managedBy": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Compute/virtualMachines/mall-vm-01",
+    "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+    },
+    "properties": {
+        "osType": "Linux",
+        "hyperVGeneration": "V2",
+        "supportsHibernation": true,
+        "supportedCapabilities": {
+            "diskControllerTypes": "SCSI, NVMe",
+            "acceleratedNetwork": true,
+            "architecture": "x64"
+        },
+        "creationData": {
+            "createOption": "FromImage",
+            "imageReference": {
+                "id": "/Subscriptions/f6ff0380-5624-4773-bc52-d6f08acf3e33/Providers/Microsoft.Compute/Locations/KoreaCentral/Publishers/canonical/ArtifactTypes/VMImage/Offers/ubuntu-24_04-lts/Skus/server/Versions/24.04.202409120"
+            }
+        },
+        "diskSizeGB": 30,
+        "diskIOPSReadWrite": 120,
+        "diskMBpsReadWrite": 25,
+        "encryption": {
+            "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": "AllowAll",
+        "securityProfile": {
+            "securityType": "TrustedLaunch"
+        },
+        "publicNetworkAccess": "Enabled",
+        "timeCreated": "2024-09-25T01:32:19.4545307+00:00",
+        "provisioningState": "Succeeded",
+        "diskState": "Attached",
+        "diskSizeBytes": 32213303296,
+        "uniqueId": "5de91e74-d5b6-4c70-8dd9-be2eda13d9aa",
+        "tier": "P4"
+    }
+}

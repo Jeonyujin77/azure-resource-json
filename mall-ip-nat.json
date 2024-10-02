@@ -1,0 +1,26 @@
+{
+    "name": "mall-ip-nat",
+    "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/publicIPAddresses/mall-ip-nat",
+    "etag": "W/\"6a141018-6b5b-4176-91c5-2c9d31b4acdd\"",
+    "location": "koreacentral",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "445431b7-fb6a-479a-9399-45afdafa24f9",
+        "natGateway": {
+            "id": "/subscriptions/c8a3a570-0dce-4af0-9058-b9e399ad0a75/resourceGroups/mall-rg/providers/Microsoft.Network/natGateways/mall-nat-gw"
+        },
+        "ipAddress": "52.141.45.36",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ddosSettings": {
+            "protectionMode": "VirtualNetworkInherited"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard",
+        "tier": "Regional"
+    }
+}
